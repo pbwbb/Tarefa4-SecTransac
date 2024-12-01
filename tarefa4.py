@@ -80,8 +80,8 @@ def comparar_ac_raiz_com_skid(certificado, conteiner_ac_raiz):
 
 
 def verificar_certificado():
-    caminho_certificado = input("Informe o caminho para o certificado contendo a cadeia de certificação (arquivo .pem, .cer ou .crt): ")
-        if os.path.isfile(caminho_certificado):
+    caminho_certificado = input("Informe o caminho para o certificado contendo a cadeia de certificação (arquivo .pem, .cer ou .crt): ")    
+    if os.path.isfile(caminho_certificado):
         try:
             with open(caminho_certificado, "rb") as f:
                 cert_bytes = f.read()
