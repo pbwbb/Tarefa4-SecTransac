@@ -1,3 +1,6 @@
+#pip install cryptography
+#as outras libs devem vir como padrâo com o python
+
 import hashlib
 import os
 import ssl
@@ -5,7 +8,7 @@ import base64
 from cryptography import x509
 from cryptography.hazmat.primitives.serialization import Encoding
 from cryptography.hazmat.backends import default_backend
--from hashlib import sha256
+from hashlib import sha256
 
 ac_raiz_confiaveis = set()
 
