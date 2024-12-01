@@ -32,7 +32,7 @@ def imprimir_informacoes_certificado(certificado):
     print("-" * 40 + "\n")
 
 def adicionar_ac_raiz():
-    caminho_ac = input("Informe o caminho para a AC-Raiz confiável: ")
+    caminho_ac = input("Informe o caminho para o certificado da AC-Raiz confiável (arquivo .pem, .cer ou .crt): ")
     print("-" * 40 + "\n")
     print("-" * 40 + "\n")
     if os.path.isfile(caminho_ac):
